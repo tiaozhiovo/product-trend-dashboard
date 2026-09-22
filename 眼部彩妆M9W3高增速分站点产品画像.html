@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>眼部彩妆 M9W3 高增速分站点产品画像</title>
+<style>
+:root{
+  --bg:#f5f6f8; --card:#ffffff; --ink:#1f2430; --muted:#6b7280; --line:#e9edf2;
+  --green:#1a9e6b; --green-bg:#e7f6ef; --amber-bg:#fff7e0; --amber-line:#f4d06f; --amber-ink:#8a6d1a;
+  --brand:#c2410c;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei","PingFang SC",Roboto,Arial,sans-serif;
+  background:var(--bg); color:var(--ink); line-height:1.6;
+}
+
+/* 免责声明条 */
+.disclaimer{
+  background:var(--amber-bg); border-bottom:1px solid var(--amber-line);
+  padding:12px 18px; color:#6f5511; font-size:13px; text-align:center;
+}
+.disclaimer b{color:#4a3a07}
+.disclaimer .disc-tag{
+  display:inline-block; background:#f4d06f; color:#5a4708; font-weight:700;
+  border-radius:4px; padding:1px 8px; margin-right:8px; font-size:12px;
+}
+
+/* 头部 */
+.hero{
+  background:linear-gradient(135deg,#2a2f3a 0%,#3a4150 60%,#4a3f47 100%);
+  color:#fff; padding:34px 20px 30px; text-align:center; position:relative; overflow:hidden;
+}
+.hero .kicker{
+  display:inline-block; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.22);
+  color:#ffe9d5; font-size:12px; letter-spacing:2px; padding:3px 12px; border-radius:999px; margin-bottom:14px;
+}
+.hero h1{font-size:30px; font-weight:800; letter-spacing:.5px}
+.hero h1 .hl{color:#ffb26b}
+.hero p{color:#cdd4de; font-size:14px; margin-top:10px; max-width:760px; margin-left:auto;margin-right:auto}
+.hero .meta{
+  display:flex; justify-content:center; gap:26px; margin-top:20px; flex-wrap:wrap;
+}
+.hero .meta .m{font-size:13px; color:#d5dbe4}
+.hero .meta .m b{color:#ffcf9e; font-size:16px; margin-left:4px}
+
+/* 水印 */
+.watermark{
+  position:fixed; inset:0; pointer-events:none; z-index:9990; overflow:hidden;
+}
+.watermark .wm-line{
+  position:absolute; white-space:nowrap; font-size:20px; color:rgba(180,90,30,.07);
+  font-weight:600; transform:rotate(-45deg); letter-spacing:1px;
+}
+
+/* 导航 */
+.nav{
+  position:sticky; top:0; z-index:500; background:rgba(255,255,255,.92);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line); padding:10px 16px;
+  display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+}
+.nav .tabs{display:flex; gap:8px; flex-wrap:wrap}
+.tab{
+  border:1px solid var(--line); background:#fff; color:var(--muted); cursor:pointer;
+  padding:6px 14px; border-radius:999px; font-size:14px; font-weight:600; transition:.15s;
+}
+.tab:hover{border-color:var(--brand); color:var(--brand)}
+.tab.active{background:var(--brand); border-color:var(--brand); color:#fff}
+.tab .cnt{font-size:12px; opacity:.75; margin-left:5px}
+.controls{display:flex; align-items:center; gap:10px; margin-left:auto; flex-wrap:wrap}
+.controls select{
+  border:1px solid var(--line); border-radius:8px; padding:6px 10px; font-size:13px; background:#fff; color:var(--ink);
+}
+.controls .range{font-size:12px; color:var(--muted)}
+
+/* 主体 */
+.wrap{max-width:1280px; margin:0 auto; padding:22px 16px 80px}
+.sec-title{
+  display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap;
+  margin:26px 0 6px;
+}
+.sec-title h2{font-size:22px; font-weight:800}
+.sec-title h2 .ico{margin-right:8px}
+.sec-title .sub{color:var(--muted); font-size:13px}
+.cat-note{color:var(--muted); font-size:13px; margin-bottom:14px}
+.cat-note b{color:var(--ink)}
+
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:16px}
+.card{
+  background:var(--card); border:1px solid var(--line); border-radius:14px; overflow:hidden;
+  box-shadow:0 1px 3px rgba(20,30,50,.05); transition:transform .18s, box-shadow .18s; cursor:pointer;
+  display:flex; flex-direction:column;
+}
+.card:hover{transform:translateY(-4px); box-shadow:0 10px 24px rgba(20,30,50,.12)}
+.card .imgbox{
+  aspect-ratio:1/1; background:#f0f2f5; display:flex; align-items:center; justify-content:center; padding:10px;
+}
+.card .imgbox img{max-width:100%; max-height:100%; object-fit:contain; display:block}
+.card .body{padding:9px 11px 11px}
+.card .cat{font-size:13px; font-weight:700; color:var(--ink); line-height:1.3}
+.card .row{display:flex; align-items:center; justify-content:space-between; margin-top:6px}
+.badge{
+  display:inline-flex; align-items:center; gap:3px; font-size:13px; font-weight:800;
+  color:#fff; padding:2px 8px; border-radius:6px;
+}
+.badge.green{background:var(--green)}
+.badge .up{font-size:12px}
+.card .rank{font-size:12px; color:var(--muted)}
+
+.empty{color:var(--muted); text-align:center; padding:40px 0; font-size:14px}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed; right:22px; bottom:26px; z-index:600; width:48px; height:48px; border-radius:50%;
+  background:var(--brand); color:#fff; border:none; font-size:20px; cursor:pointer;
+  box-shadow:0 6px 18px rgba(0,0,0,.2); opacity:0; pointer-events:none; transform:translateY(12px);
+  transition:.25s;
+}
+#toTop.show{opacity:1; pointer-events:auto; transform:translateY(0)}
+
+/* 灯箱 */
+.lightbox{
+  position:fixed; inset:0; background:rgba(15,18,24,.9); z-index:10000; display:none;
+  align-items:center; justify-content:center; padding:24px; flex-direction:column;
+}
+.lightbox.show{display:flex}
+.lightbox .lb-img{
+  max-width:90vw; max-height:80vh; object-fit:contain; background:#fff; border-radius:12px; padding:12px;
+}
+.lightbox .lb-cat{color:#fff; margin-top:14px; font-size:15px; font-weight:700}
+.lightbox .lb-sub{color:#aab3bf; font-size:13px; margin-top:4px}
+.lightbox .lb-actions{display:flex; gap:10px; margin-top:16px; flex-wrap:wrap; justify-content:center}
+.lightbox .lb-btn{
+  background:rgba(255,255,255,.15); color:#fff; border:1px solid rgba(255,255,255,.3);
+  padding:7px 16px; border-radius:8px; cursor:pointer; font-size:13px;
+}
+.lightbox .lb-btn.close{background:var(--brand); border-color:var(--brand)}
+.lightbox .lb-close{
+  position:absolute; top:18px; right:24px; background:rgba(255,255,255,.12); color:#fff; border:none;
+  width:40px; height:40px; border-radius:50%; font-size:20px; cursor:pointer;
+}
+
+/* footer */
+.footer{
+  background:#22262f; color:#9aa3af; text-align:center; padding:26px 16px 40px; font-size:12px; line-height:1.8;
+}
+.footer b{color:#cfd6df}
+
+@media(max-width:640px){
+  .hero h1{font-size:22px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr)); gap:10px}
+  .controls{margin-left:0}
+}
+</style>
+</head>
+<body>
+
+<!-- 免责声明 -->
+<div class="disclaimer">
+  <span class="disc-tag">免责声明</span>
+  <b>以下高增速产品画像为商家经验分享，仅供商家选品参考。</b>商家须自行确认所使用的元素不侵犯任何第三方知识产权、不违反相关法律法规规定。平台不对商家商品承担合法性审查义务，相关法律责任由商家自行承担。
+</div>
+
+<!-- 头部 -->
+<div class="hero">
+  <span class="kicker">迢之 · 选品参考</span>
+  <h1>眼部彩妆 <span class="hl">M9W3</span> 高增速分站点产品画像</h1>
+  <p>数据口径：取周环比（W-o-W）为正的高增速商品，按站点「美国 / 中东拉美澳新 / 欧区」分类展示，按环比降序排列，便于商家快速锁定潜力方向。</p>
+  <div class="meta">
+    <div class="m">美国 <b id="m-us"></b></div>
+    <div class="m">中东拉美澳新 <b id="m-mela"></b></div>
+    <div class="m">欧区 <b id="m-eu"></b></div>
+  </div>
+</div>
+
+<!-- 水印 -->
+<div class="watermark" id="wm"></div>
+
+<!-- 导航 -->
+<div class="nav">
+  <div class="tabs" id="tabs"></div>
+  <div class="controls">
+    <select id="catFilter"><option value="">全部叶子类目</option></select>
+    <select id="sortSel">
+      <option value="desc">环比降序</option>
+      <option value="asc">环比升序</option>
+    </select>
+    <span class="range" id="rangeInfo"></span>
+  </div>
+</div>
+
+<!-- 主体 -->
+<div class="wrap" id="main"></div>
+
+<!-- 回到顶部 -->
+<button id="toTop" title="回到顶部" aria-label="回到顶部">↑</button>
+
+<!-- 灯箱 -->
+<div class="lightbox" id="lb">
+  <button class="lb-close" id="lbClose">×</button>
+  <img class="lb-img" id="lbImg" alt="">
+  <div class="lb-cat" id="lbCat"></div>
+  <div class="lb-sub" id="lbSub"></div>
+  <div class="lb-actions">
+    <button class="lb-btn close" id="lbClose2">关闭</button>
+    <button class="lb-btn" id="lbCopy">复制图片链接</button>
+    <a class="lb-btn" id="lbOpen" target="_blank" rel="noopener">查看原图</a>
+  </div>
+</div>
+
+<div class="footer">
+  <b>眼部彩妆 M9W3 高增速产品画像</b> · 数据仅供选品参考<br>
+  如需进一步了解，欢迎联系迢之运营对接。
+</div>
+
+<script>
+var SITES = [{"name": "美国", "count": 118, "groups": [{"cat": "美容和个人护理,彩妆,眼部,眼影", "short": "眼影", "hier": "美容和个人护理 > 彩妆 > 眼部 > 眼影", "items": [{"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 15.431911966987618, "url": "https://img.kwcdn.com/product/fancy/022ae9ac-bc7e-4871-ac02-6112f8e6ae38.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 8.70407263751763, "url": "https://img.kwcdn.com/product/fancy/599ebf5a-656f-40cd-bc79-e5febc02c57d.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 7.261016949152542, "url": "https://img.kwcdn.com/product/fancy/6ef272fa-ab8a-4433-8728-67a16214012e.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 6.99950972381108, "url": "https://img.kwcdn.com/product/fancy/057fbf09-41a5-4081-9264-18efbb5fc9eb.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 5.735783172597274, "url": "https://img.kwcdn.com/product/fancy/68663cd5-75a0-4af2-947c-764c99112ddf.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 5.157070707070707, "url": "https://img.kwcdn.com/product/fancy/0715d0b7-c4ca-4062-bccb-d319de86dcd9.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 4.966008268259071, "url": "https://img.kwcdn.com/product/fancy/7ea9edad-6607-4fe7-a220-cb4f83bac4b6.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 4.176442882504257, "url": "https://img.kwcdn.com/product/fancy/d3e78c8a-581b-4a84-8b5a-c672398853f3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 3.3575305291723203, "url": "https://img.kwcdn.com/product/fancy/96dd2294-d1dc-4fa1-9ef6-7dcb23781488.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 3.113416536661467, "url": "https://img.kwcdn.com/product/fancy/667b77e6-d8fd-4a64-9dc2-4f72b31d0341.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 3.0620878563457445, "url": "https://img.kwcdn.com/product/fancy/91c0e370-fba8-40e9-abd3-154f60218c9e.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 2.4550869668811055, "url": "https://img.kwcdn.com/product/fancy/59718bc3-2466-4551-9996-0aff7430a7f2.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 2.3740365111561865, "url": "https://img.kwcdn.com/product/fancy/5ee1b2a7-171b-47d4-afee-4e4b62f419ca.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 2.2416054564533052, "url": "https://img.kwcdn.com/product/fancy/e37b0ffa-0e8b-4d1d-91cf-345ba3160afc.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.9426292770774376, "url": "https://img.kwcdn.com/product/fancy/b608e6b1-8ead-4861-89d6-e2dc1d54210c.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.8440118284869396, "url": "https://img.kwcdn.com/product/fancy/f0aef54c-c3d2-417a-8792-dd4e66a7add3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.3644578313253013, "url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/3c59f9527693dbd4aaef2003607c8071.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.349268640742062, "url": "https://img.kwcdn.com/product/fancy/f985cde9-91bc-4677-adbe-035dabdd289c.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.1802977510294586, "url": "https://img.kwcdn.com/product/fancy/18914099-a1ec-4dff-9926-9cc1e00a8485.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.0198657718120805, "url": "https://img.kwcdn.com/product/fancy/fd75e7b2-602a-426f-bf02-8992d03a2bcf.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.0049427591126812, "url": "https://img.kwcdn.com/product/fancy/fc781815-b93d-4a83-bf57-c50edb8921a5.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.9071654629554493, "url": "https://img.kwcdn.com/product/fancy/0d5d32e4-29e9-442f-9f68-49e243178ea2.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.8204797862314949, "url": "https://img.kwcdn.com/product/fancy/d28ef341-1589-41a5-9ba2-a94fdfb80b0c.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.7426759670259989, "url": "https://img.kwcdn.com/product/fancy/cb5c970c-33b6-4c10-b426-278c4e0f32dc.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.7359290914846469, "url": "https://img.kwcdn.com/product/open/122f61d8d46741d09ba53d30bb741d50-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.7124768190791441, "url": "https://img.kwcdn.com/product/fancy/3af331c8-3278-4ced-97c4-4136a939f532.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.6906976744186046, "url": "https://img.kwcdn.com/product/fancy/72a4601a-f783-40f6-b098-534e444a11f0.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.6862357080035183, "url": "https://img.kwcdn.com/product/fancy/d285d44c-e2ca-446e-b965-0a52ba41cc8c.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.6809586707914769, "url": "https://img.kwcdn.com/product/fancy/1917cd8b-3fcb-42de-a00a-e2fba06448f2.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.6789763524457403, "url": "https://img.kwcdn.com/product/fancy/323e5b5a-1794-477f-b22f-2f5b4547a328.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.6386704485622572, "url": "https://img.kwcdn.com/product/fancy/198d2e4f-8858-48a7-87e8-033443ac2d00.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.6224860702585074, "url": "https://img.kwcdn.com/product/fancy/2f191867-4783-4620-abf2-866f4c062c48.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.605270092226614, "url": "https://img.kwcdn.com/product/fancy/7a21570d-9f1e-46c6-bf78-0a2fb99623e9.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.6012884753042231, "url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/f99cfff25df08637835791e5364d4097.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.5759228187919463, "url": "https://img.kwcdn.com/product/fancy/8d924310-395d-4370-b472-47d7ffaa51db.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.5675374882849111, "url": "https://img.kwcdn.com/product/fancy/ff95add2-f6e6-4b3a-96e7-e6004db5ca21.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.5358486728363674, "url": "https://img.kwcdn.com/product/fancy/a5aa666b-d95c-44d0-b23f-b5853be23cb8.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.5255427841634739, "url": "https://img.kwcdn.com/product/fancy/510cd206-94a2-435a-9233-d2de8b57aeab.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.5221245558256967, "url": "https://img.kwcdn.com/product/fancy/c471277f-b150-4859-a823-8f87a995e1e7.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.5032219089810713, "url": "https://img.kwcdn.com/product/fancy/c3c3ef11-ae8b-4856-a85e-2caae0b2e3b3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.4998735217858724, "url": "https://img.kwcdn.com/product/fancy/67968847-1ee7-4832-b283-7e31ef06972f.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.49282748206870514, "url": "https://img.kwcdn.com/product/fancy/90fb7b52-da05-4da7-9fbf-3cb61d3e9400.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.44878240377062056, "url": "https://img.kwcdn.com/product/algo_check/auto/f5512550606755f305f34171f3b46fc2_1751959427085.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.4378027269927486, "url": "https://img.kwcdn.com/product/fancy/50f1f925-a1bf-4288-a8af-247ac59a9baf.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.4300745287154757, "url": "https://img.kwcdn.com/product/fancy/4a0996de-12d8-4bf5-a647-6270acbb49b2.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.4234730640444198, "url": "https://img.kwcdn.com/product/fancy/f31effcb-c9c7-4e9d-8728-31b2140f7030.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.40203817620191673, "url": "https://img.kwcdn.com/product/fancy/d4cef9fc-a36c-4359-9681-20a5a6882979.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.38019350160072163, "url": "https://img.kwcdn.com/product/fancy/4d97f085-49b9-448f-a794-1351c8e7d330.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.37367428058542296, "url": "https://img.kwcdn.com/product/fancy/fd79805c-fc31-4a85-a35d-81d9ae04f713.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.3698170731707318, "url": "https://img.kwcdn.com/product/fancy/7c477969-ddaf-46b1-9311-114607484a6c.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.36886282626192957, "url": "https://img.kwcdn.com/product/open/810713c33f674971be2f4bd80eea1a91-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.3673333036390362, "url": "https://img.kwcdn.com/product/fancy/de9249c4-0742-4938-829a-bb2c1658491a.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.34775406801130276, "url": "https://img.kwcdn.com/product/fancy/7c164928-f5af-40a1-b19a-d30112cac6bb.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.3397440020582749, "url": "https://img.kwcdn.com/product/fancy/449088ec-5387-4179-8239-144fd8774ac4.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.3396530498041411, "url": "https://img.kwcdn.com/product/fancy/120954f2-dce4-4443-a837-6072bc10c9ca.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.33657964026266524, "url": "https://img.kwcdn.com/product/fancy/0a3bef10-d6e4-4112-a917-fd8cabbf8bcd.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.333148937554912, "url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/38b2d226027087fb6baffa29f95e3507.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.31364119164432747, "url": "https://img.kwcdn.com/product/fancy/70b5e410-343c-480a-84fa-06895544aa7f.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.307953004970628, "url": "https://img.kwcdn.com/product/fancy/41cdf735-ba53-48c5-aec7-a752e57e7525.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.2997512985298001, "url": "https://img.kwcdn.com/product/fancy/65f5e505-c990-45cc-8573-8c9f1db157b7.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.2987960435035582, "url": "https://img.kwcdn.com/product/fancy/27d95a14-7c4e-4be0-a47d-84d4405d75e8.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.2926356589147287, "url": "https://img.kwcdn.com/product/fancy/5cf00472-2b50-485e-8e6a-57ab7a433c2f.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.2806595671590518, "url": "https://img.kwcdn.com/product/fancy/0ddf91c7-e5af-416d-a3b7-efe2f0ca236c.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.2675444371296905, "url": "https://img.kwcdn.com/product/fancy/907f07ee-a8b2-4999-8b02-c877cf5addc6.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.26594685419130004, "url": "https://img.kwcdn.com/product/fancy/3853b306-759c-4299-9eb4-dd1800605ecf.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.2637286730676243, "url": "https://img.kwcdn.com/product/20237f7428/66160222-4aba-42f5-a31e-57b2aabde0c0_984x984.png"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.25916133467294167, "url": "https://img.kwcdn.com/product/fancy/4eb416bc-c2b9-4ae1-a54a-f17fc01a96e3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.2355296080066723, "url": "https://img.kwcdn.com/product/fancy/a33c20f9-605c-4dd9-938b-326d9cf9b168.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.23509294840214146, "url": "https://img.kwcdn.com/product/fancy/7d1b3bb8-53c6-4613-81e0-dd07d307a8cd.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.22500931329939158, "url": "https://img.kwcdn.com/product/fancy/a579bd28-5706-4c7c-94e4-2dd9c20703d5.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.22060532565307467, "url": "https://img.kwcdn.com/product/fancy/48f895b1-d317-4bb9-9bb2-7851516ee4d3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.2137370489460522, "url": "https://img.kwcdn.com/product/fancy/a9e40120-8b59-4dfd-94d3-8de537689219.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.20835335300981547, "url": "https://img.kwcdn.com/product/fancy/d35b7287-61e2-40e7-bea9-638022bf72f9.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.18388610653871745, "url": "https://img.kwcdn.com/product/fancy/acad0dc3-9b23-4a00-8f18-1a0673dc2e69.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.17719889440006054, "url": "https://img.kwcdn.com/product/fancy/8d3cd810-57df-470c-b5ca-631f2f6d8749.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.17637842274117738, "url": "https://img.kwcdn.com/product/fancy/a368d3a1-f84f-4aad-ba11-10fc993de6a3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.17144666606351222, "url": "https://img.kwcdn.com/product/fancy/fc8c2634-1b4d-4972-8263-a15b0d9fcfb7.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.1568651881385497, "url": "https://img.kwcdn.com/product/fancy/172e8743-4a5d-47d8-b265-83b4ca0dfe6d.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.15364260315885217, "url": "https://img.kwcdn.com/product/fancy/363bb9ac-1bbc-4e34-bd92-3f3db5aa1729.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.14582851860411367, "url": "https://img.kwcdn.com/product/open/2024-09-06/1725617842984-7ed8d015380343b5a3cea0cc97129901-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.12244589072196141, "url": "https://img.kwcdn.com/product/fancy/dd9a9c23-7e94-4b88-9857-71838ba80e01.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.11720566476432041, "url": "https://img.kwcdn.com/product/fancy/f0f21c8b-a707-4e70-adb1-064a5af32320.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.11461379498576836, "url": "https://img.kwcdn.com/product/fancy/58ecba2b-f237-4b43-8762-de617bd245c8.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.11336323218203338, "url": "https://img.kwcdn.com/product/fancy/4be0f66c-18ab-4adb-a76c-6b16c8a59158.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.10968575118381403, "url": "https://img.kwcdn.com/product/fancy/d1f8cbca-381e-4e7c-8335-2374c7b1cabc.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.10853893796324504, "url": "https://img.kwcdn.com/product/fancy/2d0c9e11-d2f8-48f7-9df1-ce555fa8914b.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.10302945693145331, "url": "https://img.kwcdn.com/product/fancy/0c78c74d-775f-4f8a-942d-b732f15c7c8b.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.0932263156127212, "url": "https://img.kwcdn.com/product/open/2024-04-22/1713754438994-62a3a9d8784e4c33a0e09e671c441225-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.07959146945019334, "url": "https://img.kwcdn.com/product/fancy/a4c36911-0740-46c9-86cf-d007527cb489.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.07627807878669869, "url": "https://img.kwcdn.com/product/fancy/68a4b4d5-cdae-4153-a6a1-d938ed7a567e.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.06562003205025888, "url": "https://img.kwcdn.com/product/algo_check/auto/2214dc4694425a8a1880c480dbc0d1e3_1736235084315.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.06353434784056472, "url": "https://img.kwcdn.com/product/fancy/af931f2a-d350-4162-ae63-486799588ff5.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.059580040218865454, "url": "https://img.kwcdn.com/product/algo_check/auto/1230d6ac2c8903942b239780276c3a4c_1755079706666.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.05136495967164607, "url": "https://img.kwcdn.com/product/fancy/07650ef2-1c1e-48b0-bf8d-35ba54d56ed2.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.04189611549337694, "url": "https://img.kwcdn.com/product/fancy/fe742c92-6799-4c3c-b0be-94d0190851ee.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.03530641788644036, "url": "https://img.kwcdn.com/product/fancy/437d5d1e-1d4d-4006-9464-188e8d7626fb.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.023068689329347046, "url": "https://img.kwcdn.com/product/fancy/ecf56656-a8e5-4474-a33e-6983eecce9ba.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.01822151314132169, "url": "https://img.kwcdn.com/product/fancy/128f0ace-7123-4053-b4a0-a2061be6cbff.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.01796927187708757, "url": "https://img.kwcdn.com/product/fancy/5844bcd4-6429-4c0b-bdea-998ddf073fa5.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.008875718820606206, "url": "https://img.kwcdn.com/product/fancy/96551c6f-50bb-4ee8-bd57-55ae19298737.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.008709422011084782, "url": "https://img.kwcdn.com/product/fancy/a1106c8e-1aa6-4a53-a2e1-dbf5465b9df3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.002959169837205778, "url": "https://img.kwcdn.com/product/fancy/12af9836-9fd8-461b-bd2a-f4d51fca3e03.jpg"}]}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "short": "眼线笔和眼影组合", "hier": "美容和个人护理 > 彩妆 > 眼部 > 眼线笔和眼影组合", "items": [{"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 3.305160515213322, "url": "https://img.kwcdn.com/product/fancy/bf61f321-0c4b-47f2-bd5b-61ee8dde6067.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 1.8394714647174586, "url": "https://img.kwcdn.com/product/fancy/c37f36d6-a76d-46c7-935d-c7eea55caba6.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.9492137696557583, "url": "https://img.kwcdn.com/product/fancy/943f45fa-de8f-4ce8-ae0c-f5ebd1e6c978.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.6614212564006493, "url": "https://img.kwcdn.com/product/fancy/3f4b3ab9-a25f-47fe-ab99-eef78dd809bf.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.17079689358427208, "url": "https://img.kwcdn.com/product/fancy/b135a234-1ab9-442f-925e-2643b8c8dc21.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.14479608482871126, "url": "https://img.kwcdn.com/product/fancy/f0a5a362-d18b-4dd7-ab80-1ae6a128ad27.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.1384039900249377, "url": "https://img.kwcdn.com/product/fancy/929218da-18cd-4fab-89d3-c946dd24000d.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.010919337794998223, "url": "https://img.kwcdn.com/product/fancy/6246c481-49cc-4c5a-93cd-48f21c9ea018.jpg"}]}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "short": "眼部高光", "hier": "美容和个人护理 > 彩妆 > 眼部 > 眼部高光", "items": [{"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 1.3996491974061869, "url": "https://img.kwcdn.com/product/algo_check/auto/e7b7042c5cb13f531b0cb1a137e83921_1762844253252.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.9387203364373686, "url": "https://img.kwcdn.com/product/fancy/30cf5cbe-103e-4c4d-b583-e265957a2f2f.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.6591176724014132, "url": "https://img.kwcdn.com/product/open/bd92e8d07fd34fb689cfcc662dca8d93-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.6474608707538787, "url": "https://img.kwcdn.com/product/fancy/f29d921f-de53-4215-b930-609b6dc6729e.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.5308272663927533, "url": "https://img.kwcdn.com/product/fancy/1ba6c177-2530-49cb-aebb-d60e01733a9c.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.15510323906448764, "url": "https://img.kwcdn.com/product/fancy/f2c71999-2443-49c3-a331-2ebf4ca7e633.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.10109937486527269, "url": "https://img.kwcdn.com/product/fancy/bf57a1b0-abb9-49b2-b67d-618456d439ec.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.054429865304226714, "url": "https://img.kwcdn.com/product/open/2024-09-25/1727251449116-757d593f6bda4eb89ea8c3b7a4083f28-goods.jpeg"}]}]}, {"name": "中东拉美澳新", "count": 115, "groups": [{"cat": "美容和个人护理,彩妆,眼部,眼影", "short": "眼影", "hier": "美容和个人护理 > 彩妆 > 眼部 > 眼影", "items": [{"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 8.089581517000871, "url": "https://img.kwcdn.com/product/fancy/599ebf5a-656f-40cd-bc79-e5febc02c57d.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 6.6326811793882605, "url": "https://img.kwcdn.com/product/fancy/7a8725d3-cc5f-40e1-9bb2-d7f90393877a.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 4.631085714285714, "url": "https://img.kwcdn.com/product/fancy/b5531c57-b0dd-4b8c-b808-796a78360323.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 3.5266070861497987, "url": "https://img.kwcdn.com/product/fancy/bf80f34b-c489-451d-8bb3-5ee64e341ca1.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 3.40233691809623, "url": "https://img.kwcdn.com/product/algo_check/auto/4e572a2a57f16629133ada5f907ed64d_1745803376173.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 2.7982982595396204, "url": "https://img.kwcdn.com/product/fancy/fa70bc60-65d1-4338-ade5-afa87cdaa561.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 2.295007361798956, "url": "https://img.kwcdn.com/product/fancy/0b4d9888-0297-46c2-b981-364a48c1faf2.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 2.173608833497321, "url": "https://img.kwcdn.com/product/fancy/eebf77c6-87fa-458c-b9b3-b0d6806bbf3b.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 2.108923839350242, "url": "https://img.kwcdn.com/product/fancy/057fbf09-41a5-4081-9264-18efbb5fc9eb.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 2.0838869696164406, "url": "https://img.kwcdn.com/product/fancy/42f80017-0f06-4e57-bd08-826c821068c2.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.983446109231513, "url": "https://img.kwcdn.com/product/fancy/a79f1cf9-4a05-4fbe-851b-6e3d9788291a.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.922297831935433, "url": "https://img.kwcdn.com/product/fancy/d45de4f8-ae2c-403c-8725-b8a42fcc5741.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.8458119658119658, "url": "https://img.kwcdn.com/product/fancy/5d6c0dfd-4a33-45e8-9aed-9c113ea16e4b.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.5665093738043616, "url": "https://img.kwcdn.com/product/fancy/b566165c-4883-4b2d-b2b4-6a015d016bd5.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.404465546002823, "url": "https://img.kwcdn.com/product/fancy/0f72b609-3c74-43f4-b916-06d558202acb.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.3898656708676933, "url": "https://img.kwcdn.com/product/fancy/bb509077-0d45-464b-9341-657ac5dd3989.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.2843330561824444, "url": "https://img.kwcdn.com/product/fancy/e6c02426-27a2-4e78-8776-20dd86f909b3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.1845301236118029, "url": "https://img.kwcdn.com/product/fancy/faf0261a-49d3-4bb4-b058-cefd742d5b13.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.1674131775397598, "url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/bf439f465046dd023b79b9f79ed0b787.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.12241117233517, "url": "https://img.kwcdn.com/product/fancy/d47e74d5-524b-4ac7-8869-27ddbfddefcc.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.9726258432797095, "url": "https://img.kwcdn.com/product/open/fcd21800ae1a43c28150729774689036-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.9713126789516189, "url": "https://img.kwcdn.com/product/fancy/4e58d975-35fa-4829-b0a2-eefabf892b68.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.9315099457504522, "url": "https://img.kwcdn.com/product/fancy/694cfe05-a906-457f-b2c2-e4416094b62e.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.8983085250338295, "url": "https://img.kwcdn.com/product/fancy/67968847-1ee7-4832-b283-7e31ef06972f.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.8606412499779059, "url": "https://img.kwcdn.com/product/algo_check/auto/999f6e1b66350cdfe24c144d4caee480_1766738849938.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.7734445933676335, "url": "https://img.kwcdn.com/product/fancy/16c92e18-fdc0-4c7e-b555-0f21bb3df874.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.7643760817102601, "url": "https://img.kwcdn.com/product/fancy/1917cd8b-3fcb-42de-a00a-e2fba06448f2.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.7579882040313692, "url": "https://img.kwcdn.com/product/fancy/c3cf65cc-11f5-414c-b85e-dfae625050b8.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.7564223947484694, "url": "https://img.kwcdn.com/product/fancy/2f38f734-740e-4d8f-9379-68efc8059810.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.7548300714442618, "url": "https://img.kwcdn.com/product/fancy/c3c3ef11-ae8b-4856-a85e-2caae0b2e3b3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.7539856575594145, "url": "https://img.kwcdn.com/product/fancy/0715d0b7-c4ca-4062-bccb-d319de86dcd9.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.7468628063056031, "url": "https://img.kwcdn.com/product/fancy/5261e05f-7066-4f74-be3d-637f586e3e18.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.7319821523103683, "url": "https://img.kwcdn.com/product/fancy/18914099-a1ec-4dff-9926-9cc1e00a8485.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.708365488501312, "url": "https://img.kwcdn.com/product/fancy/022ae9ac-bc7e-4871-ac02-6112f8e6ae38.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.6177821065813273, "url": "https://img.kwcdn.com/product/fancy/2bd1e282-82bc-4669-bac6-674e90b2c244.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.537966202635301, "url": "https://img.kwcdn.com/product/fancy/827b2025-04fa-442e-835e-1ea1282adc7c.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.5190827538616699, "url": "https://img.kwcdn.com/product/fancy/b71f06d9-20df-4882-8f5d-f331e8630ee6.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.516550852811118, "url": "https://img.kwcdn.com/product/fancy/7e4f1c89-235e-472e-92e8-6fb97679fc6f.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.509754772945649, "url": "https://img.kwcdn.com/product/fancy/4d97f085-49b9-448f-a794-1351c8e7d330.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.4873585359980736, "url": "https://img.kwcdn.com/product/fancy/48415731-a5c7-44ab-9958-d64944c276b3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.454208068957261, "url": "https://img.kwcdn.com/product/fancy/d4cef9fc-a36c-4359-9681-20a5a6882979.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.448775849774186, "url": "https://img.kwcdn.com/product/fancy/8363d1f3-5ff0-4e76-8a63-b603137d4fcb.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.4441645269124558, "url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/7173316e593ed5bc1ca0e3ca90b67704.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.4108775028040953, "url": "https://img.kwcdn.com/product/fancy/d28ef341-1589-41a5-9ba2-a94fdfb80b0c.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.409960118621536, "url": "https://img.kwcdn.com/product/fancy/a24b0e89-6acf-4e8a-b2d0-07ac69c89d64.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.3781777695305252, "url": "https://img.kwcdn.com/product/open/f8ab994b97ad45e9b9b9a621f73a46c3-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.36635605689063266, "url": "https://img.kwcdn.com/product/fancy/5844bcd4-6429-4c0b-bdea-998ddf073fa5.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.3464057497376217, "url": "https://img.kwcdn.com/product/fancy/0dc9e0e0-bb82-44c1-9ff3-6ff5d0435c16.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.33793838094872025, "url": "https://img.kwcdn.com/product/fancy/7ea4912b-6fa3-4d2d-a6a8-8442620615a3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.3236002585042008, "url": "https://img.kwcdn.com/product/fancy/e5d8aba8-4040-40ca-8ea4-fec2196c261e.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.3230774110668802, "url": "https://img.kwcdn.com/product/fancy/fd75e7b2-602a-426f-bf02-8992d03a2bcf.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.3180376073667105, "url": "https://img.kwcdn.com/product/open/01c9e877741148dba71ee3313928785b-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.3125539523985696, "url": "https://img.kwcdn.com/product/fancy/ae4f0d66-f07e-4c07-95d7-f0de4c4fb361.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.29846429309276207, "url": "https://img.kwcdn.com/product/open/c8b62b3f707d408bbd6fcf217e339dc5-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.29171673641901147, "url": "https://img.kwcdn.com/product/fancy/59718bc3-2466-4551-9996-0aff7430a7f2.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.28961197897919533, "url": "https://img.kwcdn.com/product/fancy/09199216-d29d-41c9-9046-a6782c408117.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.2856337245415019, "url": "https://img.kwcdn.com/product/fancy/a9e40120-8b59-4dfd-94d3-8de537689219.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.28521545319465075, "url": "https://img.kwcdn.com/product/open/122f61d8d46741d09ba53d30bb741d50-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.269915834801331, "url": "https://img.kwcdn.com/product/fancy/ef46271c-7344-4942-b0aa-eb1cdb6941f0.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.26102575616640467, "url": "https://img.kwcdn.com/product/fancy/8d924310-395d-4370-b472-47d7ffaa51db.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.24426133019423196, "url": "https://img.kwcdn.com/product/open/2024-07-25/1721912972203-fbe1efa7e3f94485b51be612f587b96f-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.23877321328081044, "url": "https://img.kwcdn.com/product/fancy/cb5c970c-33b6-4c10-b426-278c4e0f32dc.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.21514318603613133, "url": "https://img.kwcdn.com/product/open/2024-08-27/1724748670444-063191320edf4abba2da2cdbec399698-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.2127295465016784, "url": "https://img.kwcdn.com/product/fancy/7de49191-8b7e-4d56-b911-67fc5bd92f52.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.20818547433167722, "url": "https://img.kwcdn.com/product/fancy/c214d95e-5989-43f4-bf20-17f6201660f9.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.20701113141717895, "url": "https://img.kwcdn.com/product/fancy/860bbb4e-21f6-492a-b3ea-6b09198086ae.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.2002434367008744, "url": "https://img.kwcdn.com/product/fancy/ce9ce425-2771-43ce-98aa-662e47e74c49.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.19806079664570223, "url": "https://img.kwcdn.com/product/fancy/2cfeb243-c789-40b0-91ee-24c9cfc8aeda.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.1961316593145571, "url": "https://img.kwcdn.com/product/fancy/8dcad403-4246-4ca4-8a65-44fc151833aa.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.185627012300834, "url": "https://img.kwcdn.com/product/fancy/f3256e4f-413d-4abe-a727-a930a3f11c95.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.1543687865314483, "url": "https://img.kwcdn.com/product/fancy/691adc03-2d4d-46cd-8137-b71c892ebdf7.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.1529760880784448, "url": "https://img.kwcdn.com/product/aisc_image/algo/pass/600568b0/373fe070/3e2af0ec-a866-4f8b-9d5b-7a4f83b8126a.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.150531739940796, "url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/1aea436fa9785e2653b6ac415f561277.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.14082104874365858, "url": "https://img.kwcdn.com/product/fancy/07650ef2-1c1e-48b0-bf8d-35ba54d56ed2.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.13653933606184618, "url": "https://img.kwcdn.com/product/fancy/0d1cfaba-ad89-4d29-a6d5-87ab2ee1a960.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.10980534272106025, "url": "https://img.kwcdn.com/product/fancy/7d1b3bb8-53c6-4613-81e0-dd07d307a8cd.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.10815905613093531, "url": "https://img.kwcdn.com/product/fancy/4eb416bc-c2b9-4ae1-a54a-f17fc01a96e3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.10324096739449717, "url": "https://img.kwcdn.com/product/fancy/b6a2d930-43a9-4124-b256-40d9e823b3c9.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.08772729575039243, "url": "https://img.kwcdn.com/product/fancy/f0f21c8b-a707-4e70-adb1-064a5af32320.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.08546266833799383, "url": "https://img.kwcdn.com/product/fancy/0c709a90-459a-4557-880c-9390b0a2bdea.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.07711303176563017, "url": "https://img.kwcdn.com/product/fancy/a368d3a1-f84f-4aad-ba11-10fc993de6a3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.07668175937904281, "url": "https://img.kwcdn.com/product/fancy/7de28381-763e-4911-8a8d-d90cf83ef3ff.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.06197360567676901, "url": "https://img.kwcdn.com/product/aisc_image/algo/pass/e11ef83b/71d7cc72/d675d59c-886c-4b3c-a15b-b6a30dec36c6.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.061851552070303115, "url": "https://img.kwcdn.com/product/fancy/3853b306-759c-4299-9eb4-dd1800605ecf.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.05915708812260537, "url": "https://img.kwcdn.com/product/fancy/f68d65cd-c30d-4cb0-bd39-6e6073a45654.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.058183770158937574, "url": "https://img.kwcdn.com/product/fancy/86d6ecac-2614-4c7e-a7f4-121683d9bdd9.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.054005912226180515, "url": "https://img.kwcdn.com/product/fancy/9d3b70cc-0804-43bb-94a9-d7bc365a4f21.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.043713765816089135, "url": "https://img.kwcdn.com/product/fancy/13146cc9-d9cc-4696-b945-5f65e237c1a9.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.03886429794607505, "url": "https://img.kwcdn.com/product/fancy/50f1f925-a1bf-4288-a8af-247ac59a9baf.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.038650478375202905, "url": "https://img.kwcdn.com/product/fancy/6720404b-7c84-49a2-93ad-dfb6fc59773f.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.029171741778319098, "url": "https://img.kwcdn.com/product/open/ab1b22e9a1434d638a4329b12f90016a-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.028736386301010306, "url": "https://img.kwcdn.com/product/fancy/b294394b-39e8-4d4f-a685-d1f34b8c7b7c.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.025246338215712236, "url": "https://img.kwcdn.com/product/fancy/0c78c74d-775f-4f8a-942d-b732f15c7c8b.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.020228671943711498, "url": "https://img.kwcdn.com/product/fancy/dad486d4-556a-4dba-85cd-41fdf82549d8.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.013147638102167092, "url": "https://img.kwcdn.com/product/fancy/65f5e505-c990-45cc-8573-8c9f1db157b7.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.004742253938578629, "url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/217741c3ada28eb6af46f2b481f73379.jpg"}]}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "short": "眼线笔和眼影组合", "hier": "美容和个人护理 > 彩妆 > 眼部 > 眼线笔和眼影组合", "items": [{"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 3.177819470502397, "url": "https://img.kwcdn.com/product/fancy/3635de05-b020-49ef-980a-93e309d017b5.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.20200543137664514, "url": "https://img.kwcdn.com/product/open/6ec2c96741c3482a956fc95d8eb8f4df-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.139314589115482, "url": "https://img.kwcdn.com/product/fancy/bd0be82b-16bc-462b-af4f-21b9d0ee03d0.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.045223850497445456, "url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/4db87da88b9e6f3775433430ed72a6a5.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.03725698918706931, "url": "https://img.kwcdn.com/product/open/2024-07-11/1720673575663-bb962cf7661445b3b6c7bfa3c54f4605-goods.jpeg"}]}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "short": "眼部高光", "hier": "美容和个人护理 > 彩妆 > 眼部 > 眼部高光", "items": [{"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.743666082895505, "url": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/3632fab35614393eedf749adbd7867b0.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.6954083420960393, "url": "https://img.kwcdn.com/product/fancy/cc322695-8aba-4663-b3ea-b2056e8c69cc.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.531029833136693, "url": "https://img.kwcdn.com/product/fancy/1ba6c177-2530-49cb-aebb-d60e01733a9c.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.49547778214707056, "url": "https://img.kwcdn.com/product/fancy/1f50e1c1-e730-4cdf-a702-15d443a14c03.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.43741691379486664, "url": "https://img.kwcdn.com/product/fancy/412690ab-e26b-4582-a75f-52eac0cf6f68.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.3207882574026106, "url": "https://img.kwcdn.com/product/fancy/bf57a1b0-abb9-49b2-b67d-618456d439ec.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.30286038753637584, "url": "https://img.kwcdn.com/product/fancy/54d52a3b-717f-480a-80c5-58baf2b2e702.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.2257283429071894, "url": "https://img.kwcdn.com/product/open/bd92e8d07fd34fb689cfcc662dca8d93-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.1726416652899388, "url": "https://img.kwcdn.com/product/fancy/77f001f3-4b67-4361-81e7-0fa452f30263.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.15095450923327422, "url": "https://img.kwcdn.com/product/fancy/ed033f35-eabb-4a59-8278-2935c8049f9e.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.11481579377965737, "url": "https://img.kwcdn.com/product/fancy/643d96d3-3a3d-4c05-9e8c-e1ab3e6078fd.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.059735282982185105, "url": "https://img.kwcdn.com/product/fancy/d2fa0ecb-eff0-41f5-b868-9dd9d89a662d.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.029873865899535373, "url": "https://img.kwcdn.com/product/fancy/8e937b53-ac93-4541-8e8f-9c474482b9da.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.009503500069537785, "url": "https://img.kwcdn.com/product/fancy/88722378-88be-477c-a70f-f7182d954c80.jpg"}]}]}, {"name": "欧区", "count": 109, "groups": [{"cat": "美容和个人护理,彩妆,眼部,眼影", "short": "眼影", "hier": "美容和个人护理 > 彩妆 > 眼部 > 眼影", "items": [{"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 10.65693986297894, "url": "https://img.kwcdn.com/product/algo_check/auto/4e572a2a57f16629133ada5f907ed64d_1745803376173.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 2.660047554784397, "url": "https://img.kwcdn.com/product/fancy/f8497dae-7061-41ee-b9f9-0301540abc99.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 2.2374756018217306, "url": "https://img.kwcdn.com/product/fancy/b2732d79-d1ce-4cc2-9a89-22eb8eda460f.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.7680725623582765, "url": "https://img.kwcdn.com/product/fancy/a79f1cf9-4a05-4fbe-851b-6e3d9788291a.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.3016875733237072, "url": "https://img.kwcdn.com/product/fancy/1892fc6b-4cfa-4aa2-8833-5c0efc31884b.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.273116586330728, "url": "https://img.kwcdn.com/product/fancy/4869732c-ae6c-44d7-a036-2903a60f3c6a.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.207361798055247, "url": "https://img.kwcdn.com/product/fancy/4d97f085-49b9-448f-a794-1351c8e7d330.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.1917287438993063, "url": "https://img.kwcdn.com/product/fancy/9eee0c8a-3cb0-46c4-9337-648c4af60c73.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.1500401176785235, "url": "https://img.kwcdn.com/product/fancy/eebf77c6-87fa-458c-b9b3-b0d6806bbf3b.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.1200780507329766, "url": "https://img.kwcdn.com/product/fancy/c3cf65cc-11f5-414c-b85e-dfae625050b8.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 1.048109243697479, "url": "https://img.kwcdn.com/product/fancy/7ec9ae90-83a5-4b2d-9647-b5223b3710c0.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.9181216253497811, "url": "https://img.kwcdn.com/product/fancy/59718bc3-2466-4551-9996-0aff7430a7f2.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.8879775444736074, "url": "https://img.kwcdn.com/product/fancy/d53613f7-02d5-4097-8166-67ccd15803fb.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.884110224053567, "url": "https://img.kwcdn.com/product/fancy/524e2631-5d4f-4f77-9288-61aae3facade.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.7944707042540892, "url": "https://img.kwcdn.com/product/fancy/bf80f34b-c489-451d-8bb3-5ee64e341ca1.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.7548063440625684, "url": "https://img.kwcdn.com/product/fancy/6d6c3786-0e4d-4bfc-b3a8-9b698ceb836e.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.659971305595409, "url": "https://img.kwcdn.com/product/fancy/ef6b07a8-87f0-46eb-aeb6-be31a57b9f3e.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.6159662306336393, "url": "https://img.kwcdn.com/product/fancy/733247a6-e0a4-4649-be96-be4c86ba89b6.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.603450530347899, "url": "https://img.kwcdn.com/product/fancy/b76895e7-2516-4f61-b33d-ce511fa1ddb4.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.5649354409125125, "url": "https://img.kwcdn.com/product/open/f8ab994b97ad45e9b9b9a621f73a46c3-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.5401765332521685, "url": "https://img.kwcdn.com/product/fancy/b0d8b815-7664-4083-848f-41ae31c6d65e.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.5210002763194251, "url": "https://img.kwcdn.com/product/fancy/6789471f-f7ba-4edd-ba21-47af3539861d.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.5013128712366481, "url": "https://img.kwcdn.com/product/fancy/e0a862cb-8eb3-471e-8dd5-071be2ebfe6f.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.4868586336844141, "url": "https://img.kwcdn.com/product/fancy/fbc61e11-a222-4473-80be-2fa2a18fa256.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.40686096132852556, "url": "https://img.kwcdn.com/product/fancy/0d341fd5-767d-4512-8115-987b3627ba91.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.39727123238967155, "url": "https://img.kwcdn.com/product/fancy/c42e198b-4a51-4fb9-92fb-d69c96acca8e.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.3914972571797355, "url": "https://img.kwcdn.com/product/fancy/9301c276-4e16-4e71-83f6-9d97f557d425.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.37461983552739925, "url": "https://img.kwcdn.com/product/fancy/5261e05f-7066-4f74-be3d-637f586e3e18.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.363220144982831, "url": "https://img.kwcdn.com/product/fancy/0b823b1f-3da7-4659-a94e-4d317b46dde9.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.35740126620440155, "url": "https://img.kwcdn.com/product/fancy/0c709a90-459a-4557-880c-9390b0a2bdea.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.3216259156672244, "url": "https://img.kwcdn.com/product/fancy/827b2025-04fa-442e-835e-1ea1282adc7c.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.31086303134392446, "url": "https://img.kwcdn.com/product/fancy/8e6fba2f-9a79-444f-abbc-17b4b6be9ef3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.29995262199835426, "url": "https://img.kwcdn.com/product/fancy/0715d0b7-c4ca-4062-bccb-d319de86dcd9.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.29469317199654294, "url": "https://img.kwcdn.com/product/fancy/a9e40120-8b59-4dfd-94d3-8de537689219.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.2793522267206478, "url": "https://img.kwcdn.com/product/fancy/81aa1b3f-4452-446e-8fd4-a70eafe02482.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.2733546041403873, "url": "https://img.kwcdn.com/product/fancy/b5a5971f-b943-4a80-8873-fa4b8f30a44c.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.2663790508678639, "url": "https://img.kwcdn.com/product/open/64a6158f2c0d496b97e4ff0e3c8b140a-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.2612489602460882, "url": "https://img.kwcdn.com/product/fancy/a4c36911-0740-46c9-86cf-d007527cb489.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.25759509484161563, "url": "https://img.kwcdn.com/product/fancy/577007ee-4d24-4e86-9d83-7655e3893515.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.2572124561435402, "url": "https://img.kwcdn.com/product/fancy/c3c3ef11-ae8b-4856-a85e-2caae0b2e3b3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.25500635537328825, "url": "https://img.kwcdn.com/product/fancy/8a77f3a6-3cb3-4e51-a3e9-f7e94afd4174.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.23785697266755168, "url": "https://img.kwcdn.com/product/fancy/af931f2a-d350-4162-ae63-486799588ff5.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.23668781073204176, "url": "https://img.kwcdn.com/product/fancy/fd75e7b2-602a-426f-bf02-8992d03a2bcf.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.20843908629441618, "url": "https://img.kwcdn.com/product/fancy/20df7bd4-ea97-4923-8f45-462ad0de0faf.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.20839713784558853, "url": "https://img.kwcdn.com/product/fancy/4e58d975-35fa-4829-b0a2-eefabf892b68.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.19464016617114013, "url": "https://img.kwcdn.com/product/open/c7459a36acdb4bf0acadaf2c10eb5ad7-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.19069748646245863, "url": "https://img.kwcdn.com/product/fancy/4a0996de-12d8-4bf5-a647-6270acbb49b2.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.18892461250539858, "url": "https://img.kwcdn.com/product/fancy/6e237852-f0bf-4e9d-98b4-6f5bd14195fc.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.1867316014451516, "url": "https://img.kwcdn.com/product/fancy/a5ebe1c1-bc9c-4975-96e9-406adaecf890.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.18615498780875658, "url": "https://img.kwcdn.com/product/fancy/198d2e4f-8858-48a7-87e8-033443ac2d00.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.17469866846168397, "url": "https://img.kwcdn.com/product/fancy/727466ef-680e-4417-9cc1-3cc88516bb8c.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.1729415755108963, "url": "https://img.kwcdn.com/product/fancy/f8bf074d-0712-4860-9036-d324947b60ca.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.16303624231727887, "url": "https://img.kwcdn.com/product/fancy/7ea4912b-6fa3-4d2d-a6a8-8442620615a3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.1606698237562856, "url": "https://img.kwcdn.com/product/fancy/decbce07-c5b9-4ea2-9681-a9dcf6d84477.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.15876260561460884, "url": "https://img.kwcdn.com/product/fancy/b00a489f-93b5-41b0-8b05-a27134cb53ca.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.14779471110478093, "url": "https://img.kwcdn.com/product/fancy/2f38f734-740e-4d8f-9379-68efc8059810.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.14712664065271372, "url": "https://img.kwcdn.com/product/fancy/39b7037f-8bb6-45d4-b632-70e4470e7a92.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.14255919090231156, "url": "https://img.kwcdn.com/product/fancy/d35b7287-61e2-40e7-bea9-638022bf72f9.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.12266779529503057, "url": "https://img.kwcdn.com/product/fancy/ff95add2-f6e6-4b3a-96e7-e6004db5ca21.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.11743346968791653, "url": "https://img.kwcdn.com/product/algo_check/auto/95f51c36e4ed1f7dc29461eb4dfc78c3_1786677339539.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.11441080500598903, "url": "https://img.kwcdn.com/product/open/a5225d40682b408b9fee9186704a298e-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.11397095443950839, "url": "https://img.kwcdn.com/product/fancy/4537aa2b-58f8-4437-905f-0e6bb6f377fd.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.1095978414493127, "url": "https://img.kwcdn.com/product/fancy/c471277f-b150-4859-a823-8f87a995e1e7.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.10862783604591537, "url": "https://img.kwcdn.com/product/fancy/fd79805c-fc31-4a85-a35d-81d9ae04f713.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.1082374139832548, "url": "https://img.kwcdn.com/product/fancy/f3256e4f-413d-4abe-a727-a930a3f11c95.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.10574113393176227, "url": "https://img.kwcdn.com/product/fancy/7aa4a70a-1ecd-4b13-9a19-155efa6ecd0e.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.09525495750708204, "url": "https://img.kwcdn.com/product/fancy/67968847-1ee7-4832-b283-7e31ef06972f.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.08669033287029894, "url": "https://img.kwcdn.com/product/fancy/907f07ee-a8b2-4999-8b02-c877cf5addc6.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.08199065163596371, "url": "https://img.kwcdn.com/product/open/01c9e877741148dba71ee3313928785b-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.0684917027798329, "url": "https://img.kwcdn.com/product/fancy/8e75e3a8-0ab6-435c-bfcb-82c92202c629.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.06629175025432826, "url": "https://img.kwcdn.com/product/fancy/1fdcaaae-1c0c-4973-b7e3-a946572910e1.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.06456926903323769, "url": "https://img.kwcdn.com/product/fancy/a368d3a1-f84f-4aad-ba11-10fc993de6a3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.06256422656108335, "url": "https://img.kwcdn.com/product/fancy/3f806baa-3e45-406c-8db9-571da9cf1526.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.05970652534323948, "url": "https://img.kwcdn.com/product/fancy/acad0dc3-9b23-4a00-8f18-1a0673dc2e69.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.05560307955517541, "url": "https://img.kwcdn.com/product/fancy/dad9027a-27ab-4322-9602-5d124756e730.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.05198500104887763, "url": "https://img.kwcdn.com/product/fancy/2c3d56a4-3a64-4421-9aaf-098a4ffbf02b.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.05150360016941976, "url": "https://img.kwcdn.com/product/fancy/a45b183f-dcbc-4724-a7a2-bb90f36ad21c.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.04710391608038922, "url": "https://img.kwcdn.com/product/fancy/48f895b1-d317-4bb9-9bb2-7851516ee4d3.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.04424125846486263, "url": "https://img.kwcdn.com/product/fancy/22ec3952-77ed-451a-b782-576f440781a2.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.043119600291454244, "url": "https://img.kwcdn.com/product/fancy/09199216-d29d-41c9-9046-a6782c408117.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.041362142150448554, "url": "https://img.kwcdn.com/product/fancy/00882d2f-d146-45f9-b327-5e39694c056b.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.03965325787154785, "url": "https://img.kwcdn.com/product/fancy/0d5d32e4-29e9-442f-9f68-49e243178ea2.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.0329069991644706, "url": "https://img.kwcdn.com/product/fancy/93cb1409-a167-4547-a3b6-78112e7c7007.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.030673347183184613, "url": "https://img.kwcdn.com/product/open/1179cd71c611479abccf23b3929890ff-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.030011309408876533, "url": "https://img.kwcdn.com/product/fancy/3af331c8-3278-4ced-97c4-4136a939f532.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.02200552124088908, "url": "https://img.kwcdn.com/product/fancy/fa70bc60-65d1-4338-ade5-afa87cdaa561.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.013279769213346504, "url": "https://img.kwcdn.com/product/fancy/96551c6f-50bb-4ee8-bd57-55ae19298737.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.013192371664881799, "url": "https://img.kwcdn.com/product/fancy/12b2354c-4853-4253-8722-83c957ffb47b.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.011830471018610084, "url": "https://img.kwcdn.com/product/algo_check/auto/2214dc4694425a8a1880c480dbc0d1e3_1736235084315.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.009867887826227894, "url": "https://img.kwcdn.com/product/fancy/494abaf7-2652-48db-bfc4-fcb5d99e01e0.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.004934074135500456, "url": "https://img.kwcdn.com/product/fancy/80305faf-63ad-467a-be58-eee303a23a5d.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼影", "ratio": 0.004662242988743249, "url": "https://img.kwcdn.com/product/fancy/4be0f66c-18ab-4adb-a76c-6b16c8a59158.jpg"}]}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "short": "眼部高光", "hier": "美容和个人护理 > 彩妆 > 眼部 > 眼部高光", "items": [{"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 1.059137266207791, "url": "https://img.kwcdn.com/product/fancy/412690ab-e26b-4582-a75f-52eac0cf6f68.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.9834607468391651, "url": "https://img.kwcdn.com/product/fancy/33a6c973-461a-4322-a696-22ab7ac5e839.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.5049017038007865, "url": "https://img.kwcdn.com/product/fancy/88722378-88be-477c-a70f-f7182d954c80.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.38332917394559507, "url": "https://img.kwcdn.com/product/fancy/170d288b-872c-463b-8ea9-83993e8f3d09.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.20415274795196067, "url": "https://img.kwcdn.com/product/fancy/d2fa0ecb-eff0-41f5-b868-9dd9d89a662d.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.2026275896917636, "url": "https://img.kwcdn.com/product/fancy/2e4d6df4-721a-4d5d-b20a-673466cdf0bf.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.055333251503620964, "url": "https://img.kwcdn.com/product/fancy/304de9ce-a8d6-472b-af4d-13164cbd95bb.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.02335317945790185, "url": "https://img.kwcdn.com/product/fancy/2ff01759-7282-4143-a7bd-7540007bd52e.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼部高光", "ratio": 0.01376930766502209, "url": "https://img.kwcdn.com/product/fancy/45d4b9a7-9b52-4857-9e21-38d300518455.jpg"}]}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "short": "眼线笔和眼影组合", "hier": "美容和个人护理 > 彩妆 > 眼部 > 眼线笔和眼影组合", "items": [{"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.7770452358036576, "url": "https://img.kwcdn.com/product/fancy/6b19565b-d339-4904-be61-b1d80f642c9a.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.5821753713464302, "url": "https://img.kwcdn.com/product/21f0661bd0/92a99027-89ab-43b3-8dda-7d1ed2d6e9fc_1000x1000.png"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.26419169366371903, "url": "https://img.kwcdn.com/product/fancy/3f4b3ab9-a25f-47fe-ab99-eef78dd809bf.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.20831095080960768, "url": "https://img.kwcdn.com/product/fancy/b69d4f03-fea7-4536-b35d-f112e70b0ce7.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.1319763979862502, "url": "https://img.kwcdn.com/product/fancy/18fad2ec-1bcf-45ab-bd8f-1361cfc4f7fe.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.06971948966880029, "url": "https://img.kwcdn.com/product/fancy/13890ca1-360a-4b1d-8f92-7fcc7acb4f3e.jpg"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.06130174196488026, "url": "https://img.kwcdn.com/product/open/2024-07-11/1720673575663-bb962cf7661445b3b6c7bfa3c54f4605-goods.jpeg"}, {"cat": "美容和个人护理,彩妆,眼部,眼线笔和眼影组合", "ratio": 0.004978269458711972, "url": "https://img.kwcdn.com/product/open/c68cd05450104c7e91eca878cac160fc-goods.jpeg"}]}]}];
+var state = { site: SITES[0].name, cat: '', sort: 'desc' };
+
+// 叶子类目全量收集
+var allCats = [];
+SITES.forEach(function(s){ s.groups.forEach(function(g){ if(allCats.indexOf(g.cat)<0) allCats.push(g.cat); }); });
+
+function esc(s){ return String(s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+function fmtRatio(r){ return (r*100).toFixed(1); }
+
+// 水印
+(function(){
+  var wm = document.getElementById('wm');
+  var text = '眼部彩妆M9W3高增速选品参考｜欢迎联系迢之 VX：tiaozhiovo';
+  var count = 22;
+  var html = '';
+  for(var i=0;i<count;i++){
+    var x = (i*97)%120 - 20;
+    var y = i*140 + 20;
+    html += '<div class="wm-line" style="left:'+x+'%;top:'+(y%1600)+'px">'+esc(text)+'</div>';
+  }
+  wm.innerHTML = html;
+})();
+
+// 站点 tabs
+function renderTabs(){
+  var el = document.getElementById('tabs');
+  el.innerHTML = '';
+  SITES.forEach(function(s){
+    var b = document.createElement('button');
+    b.className = 'tab' + (s.name===state.site ? ' active':'');
+    b.innerHTML = esc(s.name) + ' <span class="cnt">'+s.count+'</span>';
+    b.onclick = function(){ state.site = s.name; render(); };
+    el.appendChild(b);
+  });
+  // meta
+  SITES.forEach(function(s){
+    var id = 'm-'+s.name.replace('美国','us').replace('中东拉美澳新','mela').replace('欧区','eu');
+    var elm = document.getElementById(id);
+    if(elm) elm.textContent = s.count;
+  });
+}
+
+// 类目下拉
+function renderCatSelect(){
+  var sel = document.getElementById('catFilter');
+  var cur = state.cat;
+  sel.innerHTML = '<option value="">全部叶子类目</option>';
+  allCats.forEach(function(c){
+    var o = document.createElement('option');
+    o.value = c; o.textContent = c.split(',').pop();
+    if(c===cur) o.selected = true;
+    sel.appendChild(o);
+  });
+}
+
+function currentGroups(){
+  var s = SITES.find(function(x){ return x.name===state.site; });
+  if(!s) return [];
+  if(state.cat){
+    return s.groups.filter(function(g){ return g.cat===state.cat; });
+  }
+  return s.groups;
+}
+
+function render(){
+  renderTabs();
+  var main = document.getElementById('main');
+  var groups = currentGroups();
+  var html = '';
+  var total = 0;
+  groups.forEach(function(g){
+    var items = g.items.slice();
+    if(state.sort==='asc') items.sort(function(a,b){ return a.ratio-b.ratio; });
+    total += items.length;
+    var cards = '';
+    items.forEach(function(it, idx){
+      var badge = '<span class="badge green"><span class="up">↑</span>'+fmtRatio(it.ratio)+'%</span>';
+      cards += '<div class="card" data-u="'+esc(it.url)+'" data-cat="'+esc(g.short)+'" data-hier="'+esc(g.hier)+'" data-r="'+fmtRatio(it.ratio)+'">'
+        + '<div class="imgbox"><img loading="lazy" src="'+esc(it.url)+'" alt="'+esc(g.short)+'" referrerpolicy="no-referrer"></div>'
+        + '<div class="body"><div class="cat">'+esc(g.short)+'</div>'
+        + '<div class="row">'+badge+'<span class="rank">第'+ (idx+1) +'名</span></div></div></div>';
+    });
+    html += '<div class="sec-title"><h2><span class="ico">◆</span>'+esc(g.short)+'<span style="font-size:14px;color:var(--muted);margin-left:10px;font-weight:600">'+items.length+' 款</span></h2>'
+      + '<div class="sub">'+esc(g.hier)+'</div></div>';
+    html += '<div class="grid">'+cards+'</div>';
+  });
+  if(total===0) html = '<div class="empty">当前筛选条件下暂无高增速商品。</div>';
+  main.innerHTML = html;
+  document.getElementById('rangeInfo').textContent = '当前站点共 '+total+' 款高增速商品';
+  bindCards();
+}
+
+function bindCards(){
+  var cards = document.querySelectorAll('.card');
+  cards.forEach(function(c){
+    c.onclick = function(){ openLb(c.getAttribute('data-u'), c.getAttribute('data-cat'), c.getAttribute('data-hier'), c.getAttribute('data-r')); };
+  });
+}
+
+var lb = document.getElementById('lb');
+function openLb(url, cat, hier, r){
+  document.getElementById('lbImg').src = url;
+  document.getElementById('lbCat').textContent = cat + ' · 环比 +'+r+'%';
+  document.getElementById('lbSub').textContent = hier;
+  document.getElementById('lbOpen').href = url;
+  lb.classList.add('show');
+}
+function closeLb(){ lb.classList.remove('show'); }
+document.getElementById('lbClose').onclick = closeLb;
+document.getElementById('lbClose2').onclick = closeLb;
+lb.addEventListener('click', function(e){ if(e.target===lb) closeLb(); });
+document.getElementById('lbCopy').onclick = function(){
+  var url = document.getElementById('lbImg').src;
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(url).then(function(){ alert('已复制图片链接'); }, function(){ prompt('复制失败，请手动复制：', url); });
+  } else {
+    prompt('复制失败，请手动复制：', url);
+  }
+};
+
+// 回到顶部
+var toTop = document.getElementById('toTop');
+window.addEventListener('scroll', function(){
+  if(window.scrollY>400){ toTop.classList.add('show'); } else { toTop.classList.remove('show'); }
+});
+toTop.onclick = function(){ window.scrollTo({top:0, behavior:'smooth'}); };
+
+// 控件
+document.getElementById('catFilter').onchange = function(){ state.cat = this.value; render(); };
+document.getElementById('sortSel').onchange = function(){ state.sort = this.value; render(); };
+
+// 初始化
+renderCatSelect();
+render();
+</script>
+</body>
+</html>
